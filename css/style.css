@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	width: 800px;
+	height: 610px;
+	background: #FFFFFF;
+}
+
+.profile h2 {
+	margin-left: 109px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 10px;
+	}
+
+.profile {
+ 	width: 950px;
+ 	margin-top: 183px;
+ 	font-size: 1.3em;
+}
+
+.profile-form {
+	 display: grid;
+	 grid-template-columns: 70px 130px 130px 130px 1px;
+	 grid-template-rows: 5;
+	 grid-template-areas:
+	 " . sms name surname . photo"
+	 " . mail mail mail . photo"
+	 " . telephone telephone telephone . photo"
+	 " . checkbox-1 . checkbox-2 . photo"
+	 " . submit . . . photo";
+	 grid-column-gap: 24px;
+	 grid-row-gap: 20px;
+	 padding: 15px;
+}
+
+.photo {
+	grid-area: photo;
+	border-radius: 0px;
+	position: absolute;
+	width: 800px;
+	height: 810px;
+	left: 657px;
+	top: 50px;
+	margin-left: 35px;
+}
+
+.sms {
+	grid-area: sms;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.name {
+ 	grid-area: name;
+ 	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.surname {
+ 	grid-area: surname;
+ 	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.mail {
+ 	grid-area: mail;
+ 	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.telephone {
+ 	grid-area: telephone;
+ 	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.checkbox-1 {
+ 	grid-area: checkbox-1;
+ 	margin-top: 10px;
+ 	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 11px;
+	line-height: 16px;
+	background: #FFFFFF;
+	box-sizing: border-box;
+}
+
+.checkbox-2 {
+ 	grid-area: checkbox-2;
+ 	margin-top: 10px;
+ 	/*font-family: 'Montserrat', sans-serif;*/
+	font-style: normal;
+	font-weight: 300;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+.submit {
+	grid-area: submit;
+	width: 155px;
+	height: 44px;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	background-color: rgba(6, 169, 179, 1);
+	color: rgba(255, 255, 255, 1);
+	padding: 12px 32px 12px 32px;
+	border-color: rgba(6, 169, 179, 1);
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-size: 16px;
+}
+
+.input {
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	width: 132px;
+	height: 44px;
+	left: 147px;
+	top: 327px;
+	background: #FFFFFF;
+	border: 1px solid #CFDCE3;
+}
+
+.mail .input {
+	width: 444px;
+	height: 44px;
+	left: 147px;
+	top: 413px;
+	background: #FFFFFF;
+	border: 1px solid #CFDCE3;
+	box-sizing: border-box;
+}
+
+.telephone .input {
+	width: 444px;
+	height: 44px;
+	left: 147px;
+	top: 499px;
+	background: #FFFFFF;
+	border: 1px solid #CFDCE3;
+	box-sizing: border-box;
+}
+
+.mail .placeholder {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333333;
+	opacity: 0.3;
+}
+
+.words {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 11px;
+	color: #333333;
+}
+
+.sms::placeholder {
+	font-size: 1.5em;
+	}
